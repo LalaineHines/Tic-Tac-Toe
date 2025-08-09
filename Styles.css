@@ -32,3 +32,44 @@ h1 {
     font-weight: bold;
 }
 
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black solid 4px;
+    border-left: black solid 4px;
+    border-right: black solid 4px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black solid 4px;
+    border-left: black solid 4px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black solid 4px;
+    border-top: black solid 4px;
+    border-right: black solid 4px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 4px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
