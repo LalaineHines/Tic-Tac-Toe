@@ -63,3 +63,29 @@ const playGame = (() => {
     return {addClick}
 })();
 
+// Renders move & reset button functionality
+const renderAndReset = (() => {
+    const {board} = gameBoard;
+    const {onClick} = playGame;
+
+    function renderMoves() {
+        // Loop through every item in board[] and push array value to corresponding dom square
+        for (let i = 0; i < board.length; i++) {
+            const targetBox = document.getElementById(`${i}`);
+            targetBox.textContent = board[i];
+        }
+    }
+
+    const resetBtn = document.getElementById('resetBtn');
+
+    resetBtn.addEventListener('click', () => {
+        for (let i = 0; i < board.length; i++) {
+            board[i] = '';
+        }
+        winner.textContent = 'May The best Player Win!';
+        addClick();
+        renderMoves();
+    });
+
+    return {renderMoves}
+})();
